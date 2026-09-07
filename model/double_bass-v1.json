@@ -1,0 +1,249 @@
+{
+  "$schema": "hlolli-wg-double-bass-model-v2",
+  "schema_version": 2,
+  "id": "double_bass_v1",
+  "display_name": "Double Bass v1",
+  "evidence_status": "violin-derived",
+  "donor": {
+    "repository": "https://github.com/hlolli/hlolli_wg_violin",
+    "commit": "12f064bc9a84f7dd9cd44dc570bec69cc8e3ad72",
+    "source_path": "src/hlolli_wg_violin.c",
+    "source_sha256": "6814ff43dc60ca5a13880c13cde1fce3f4b51888b0a285314e9c78e844b2362e",
+    "embedded_model_sha256": "9cec902aff31ce81edb134279d66a35851ed13c30d8fd45ffe6c61fbe538d8f6"
+  },
+  "strings": [
+    {
+      "characteristic_impedance_kg_per_second": 0.55,
+      "loss_time_constant_seconds": 0.35,
+      "nut_cutoff_hz": 20000.0,
+      "bridge_cutoff_hz": 5386.995271806526,
+      "nut_loss_fraction": 0.25,
+      "second_polarization": {
+        "mix": 0.0,
+        "detune_cents": 0.0,
+        "loss_time_constant_seconds": 0.35,
+        "bridge_cutoff_hz": 5386.995271806526
+      }
+    },
+    {
+      "characteristic_impedance_kg_per_second": 0.42,
+      "loss_time_constant_seconds": 0.45,
+      "nut_cutoff_hz": 4200.0,
+      "bridge_cutoff_hz": 8000.0,
+      "nut_loss_fraction": 0.25,
+      "second_polarization": {
+        "mix": 0.0,
+        "detune_cents": 0.0,
+        "loss_time_constant_seconds": 0.45,
+        "bridge_cutoff_hz": 8000.0
+      }
+    },
+    {
+      "characteristic_impedance_kg_per_second": 0.30,
+      "loss_time_constant_seconds": 1.10,
+      "nut_cutoff_hz": 12000.0,
+      "bridge_cutoff_hz": 2000.0,
+      "nut_loss_fraction": 0.25,
+      "second_polarization": {
+        "mix": 0.0,
+        "detune_cents": 0.0,
+        "loss_time_constant_seconds": 1.10,
+        "bridge_cutoff_hz": 2000.0
+      }
+    },
+    {
+      "characteristic_impedance_kg_per_second": 0.22,
+      "loss_time_constant_seconds": 0.35,
+      "nut_cutoff_hz": 12000.0,
+      "bridge_cutoff_hz": 3500.0,
+      "nut_loss_fraction": 0.25,
+      "second_polarization": {
+        "mix": 0.60,
+        "detune_cents": 8.0,
+        "loss_time_constant_seconds": 0.70,
+        "bridge_cutoff_hz": 6000.0
+      }
+    }
+  ],
+  "bow": {
+    "speed_scale": 0.65,
+    "friction": {
+      "floor_mu": 0.35,
+      "slow_gain": 0.45,
+      "slow_speed": 0.1,
+      "fast_gain": 0.40,
+      "fast_speed": 0.01
+    },
+    "force_map": {
+      "mu_drop_floor": 0.20,
+      "minimum_divisor": 60.0,
+      "control_low": 0.10,
+      "control_high": 0.85,
+      "normal_max_scale": 0.85,
+      "extreme_max_scale": 1.5
+    },
+    "contact": {
+      "stiffness": 6000.0,
+      "damping": 0.18,
+      "breakaway": 0.70,
+      "dynamic_mix": 0.03,
+      "memory_release_seconds": 0.012,
+      "thermal_attack_seconds": 0.010,
+      "thermal_release_seconds": 0.180,
+      "thermal_drop": 0.08,
+      "thermal_work_scale": 0.16,
+      "hair_stiffness": 2500.0,
+      "hair_damping": 2.0,
+      "hair_contact_mix": 0.15
+    }
+  },
+  "gestures": {
+    "transition_seconds": 0.012,
+    "bow_change_seconds": 0.012,
+    "bow_change_contact_dip": 0.48,
+    "bow_change_force_floor": 0.72,
+    "detache": {
+      "onset_seconds": 0.007,
+      "stroke_seconds": 0.045,
+      "force_base": 0.62,
+      "force_attack": 0.50,
+      "force_settle": -0.18,
+      "speed_base": 0.96,
+      "speed_attack": 0.08,
+      "speed_settle": -0.04,
+      "contact_attack_scale": 2.0
+    },
+    "martele": {
+      "preload_seconds": 0.004,
+      "acceleration_seconds": 0.008,
+      "stroke_seconds": 0.040,
+      "force_base": 0.35,
+      "force_preload": 1.05,
+      "force_acceleration": -0.35,
+      "force_settle": -0.23,
+      "speed_preload": 0.03,
+      "speed_acceleration": 1.12,
+      "speed_settle": -0.37,
+      "contact_preload_scale": 1.7
+    },
+    "spiccato": {
+      "stroke_fast_seconds": 0.032,
+      "stroke_slow_seconds": 0.050,
+      "force_base": 0.25,
+      "force_bounce": 1.05,
+      "speed_base": 0.18,
+      "speed_bounce": 1.02
+    },
+    "tremolo": {
+      "onset_seconds": 0.006,
+      "rate_min_hz": 8.0,
+      "rate_max_hz": 14.0,
+      "force_base": 0.82,
+      "force_motion": 0.22,
+      "contact_base": 0.68,
+      "contact_motion": 0.32
+    }
+  },
+  "release_t60_seconds": {
+    "arco": 0.42,
+    "detache": 0.38,
+    "martele": 0.13,
+    "spiccato": 0.09,
+    "tremolo": 0.18,
+    "pizzicato_right": 0.72,
+    "pizzicato_left": 0.32,
+    "bartok": 0.38,
+    "battuto": 0.16,
+    "tratto": 0.22
+  },
+  "harmonics": {
+    "touch_level": [0.97, 0.97, 0.97, 0.97, 0.97, 0.97, 0.97],
+    "attack_seconds": 0.012,
+    "release_seconds": 0.025,
+    "order_transition_seconds": 0.012
+  },
+  "exciters": {
+    "noise_highpass": 0.89,
+    "contact_attack_seconds": 0.0008,
+    "contact_release_seconds": 0.003,
+    "speed_smoothing_seconds": 0.001,
+    "pizzicato_right": {
+      "pulse_min_seconds": 0.00018,
+      "pulse_range_seconds": 0.00072,
+      "amplitude": 0.36,
+      "noise_gain": 0.0025
+    },
+    "pizzicato_left": {
+      "pulse_min_seconds": 0.00010,
+      "pulse_range_seconds": 0.00034,
+      "amplitude": 0.27,
+      "noise_gain": 0.018
+    },
+    "bartok": {
+      "pulse_min_seconds": 0.00010,
+      "pulse_range_seconds": 0.00030,
+      "impact_delay_min_seconds": 0.00045,
+      "impact_delay_range_seconds": 0.00085,
+      "impact_min_seconds": 0.00010,
+      "impact_range_seconds": 0.00024,
+      "amplitude": 0.48,
+      "noise_gain": 0.010,
+      "impact_gain": 0.62,
+      "impact_alternating_mix": 0.62
+    },
+    "battuto": {
+      "collision_seconds": 0.003,
+      "noise_gain": 0.10,
+      "speed_base": 0.16,
+      "speed_force": 0.72,
+      "stiffness_base": 350000.0,
+      "stiffness_force": 1250000.0,
+      "damping_base": 3.0,
+      "damping_force": 7.0,
+      "mass_kg": 0.0025
+    },
+    "tratto": {
+      "speed_scale": 0.55,
+      "transition_min": 0.04,
+      "transition_range": 0.12,
+      "force_gain": 0.12,
+      "grain_gain": 0.006
+    }
+  },
+  "coupling": {
+    "bridge_coefficients": [
+      [0.0, 0.00035, 0.00035, 0.00035],
+      [0.00035, 0.0, 0.00035, 0.00035],
+      [0.00035, 0.00035, 0.0, 0.00035],
+      [0.00035, 0.00035, 0.00035, 0.0]
+    ],
+    "sympathetic_open_scale": 6.0
+  },
+  "body": {
+    "wet_gain": 0.45,
+    "gain_smoothing_seconds": 0.015,
+    "bridge_radiation_cutoff_hz": 4000.0,
+    "bridge_radiation_gain": 0.020,
+    "body_decay_base": 1.00,
+    "body_decay_range": 0.10,
+    "mute_decay_scale": 2.5,
+    "body_tone_depth": 0.28,
+    "mute_low_attenuation": 0.15,
+    "mute_high_attenuation": 0.65,
+    "mute_level_attenuation": 0.55,
+    "modes": [
+      { "frequency_hz": 66.25, "bandwidth_hz": 3.75, "gain": 0.6310, "pan": 0.00 },
+      { "frequency_hz": 98.75, "bandwidth_hz": 6.25, "gain": 0.2818, "pan": -0.10 },
+      { "frequency_hz": 107.5, "bandwidth_hz": 5.0, "gain": 0.3981, "pan": 0.08 },
+      { "frequency_hz": 137.5, "bandwidth_hz": 7.5, "gain": 0.7079, "pan": -0.16 },
+      { "frequency_hz": 166.25, "bandwidth_hz": 7.5, "gain": 1.0000, "pan": 0.16 },
+      { "frequency_hz": 205.0, "bandwidth_hz": 13.75, "gain": 0.5200, "pan": -0.22 },
+      { "frequency_hz": 260.0, "bandwidth_hz": 20.0, "gain": 0.4000, "pan": 0.22 },
+      { "frequency_hz": 330.0, "bandwidth_hz": 30.0, "gain": 0.3400, "pan": -0.26 },
+      { "frequency_hz": 427.5, "bandwidth_hz": 45.0, "gain": 0.3100, "pan": 0.26 },
+      { "frequency_hz": 587.5, "bandwidth_hz": 105.0, "gain": 0.5000, "pan": -0.30 },
+      { "frequency_hz": 825.0, "bandwidth_hz": 162.5, "gain": 0.3600, "pan": 0.30 },
+      { "frequency_hz": 1175.0, "bandwidth_hz": 275.0, "gain": 0.1800, "pan": -0.24 }
+    ]
+  }
+}
